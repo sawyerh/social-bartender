@@ -34,7 +34,7 @@ function sh_sb_init(){
 	
 	if( current_user_can( 'manage_options' ) ){
 		// Display admin pages
-		add_action( 'admin_menu', sh_sb_create_menu );
+		add_action( 'admin_menu', 'sh_sb_create_menu' );
 	}
 		 	
 }
@@ -42,10 +42,10 @@ function sh_sb_init(){
 function sh_sb_create_menu(){
 	
 	$settings = add_menu_page( 'Social Bartender Settings', 'Social Bartender', 'manage_options', 
-					__FILE__, sh_sb_settings_page, SH_SB_DIR.'/images/icon.png' );
+					__FILE__, 'sh_sb_settings_page', SH_SB_DIR.'/images/icon.png' );
 	
 	add_submenu_page( __FILE__, 'Help', 'Help', 
-					  'manage_options', __FILE__.'_help', sh_sb_help_page );
+					  'manage_options', __FILE__.'_help', 'sh_sb_help_page' );
 					  
 	//script actions with page detection 
 	add_action( 'admin_print_scripts-'.$settings, 'sh_sb_image_admin_scripts' ); 
