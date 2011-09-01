@@ -2,7 +2,7 @@
 /*
 Plugin Name: Social Bartender
 Plugin URI: http://shakenandstirredweb.com
-Description: A simple solution for adding a list of social network links anywhere you want, with one little function.
+Description: A simple solution for adding a list of social network links (images or text) anywhere you want, with one little function. 
 Version: 1.0.0
 Author: Sawyer Hollenshead (Shaken &amp; Stirred Web)
 Author URI: http://shakenandstirredweb.com
