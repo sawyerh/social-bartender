@@ -1,0 +1,160 @@
+.wrap{
+	max-width: 940px;
+}
+.empty-message{
+	text-align: center;
+	padding: 80px 50px;
+}
+.empty-message p{
+	font-family: Georgia, "Times New Roman", "Bitstream Charter", Times, serif;
+	font-size: 18px;
+	font-style: italic;
+	color: #888;
+}
+
+/* *******************************************
+				Add New Item
+******************************************* */
+.postbox .inside{
+	padding: 0;
+}
+
+.postbox p{
+	padding: 0 10px;
+}
+
+.postbox input[type="text"]{
+	width: 85%;
+	color: #444;
+}
+
+.postbox input[type="text"].error-field{
+	border: 1px solid red;
+}
+
+.postbox label{
+	display: block;
+	margin-bottom: 2px;
+}
+
+.required{
+	color: #bd0000;
+}
+
+#sh_sb_icon_new{
+	width: 150px;
+}
+
+.sh_sb-border-bottom, .postbox p.sh_sb-border-bottom, tbody td, th{
+	border-bottom-color: #DFDFDF;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	-webkit-box-shadow: 0 1px 0 #fff;
+	-moz-box-shadow: 0 1px 0 #fff;
+	box-shadow: 0 1px 0 #fff;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
+/* *******************************************
+				Listing Table
+******************************************* */
+table{
+	max-width: 700px;
+	position: relative;
+}
+
+table.empty-table{
+	width: 100%;
+}
+
+td, th{
+	padding: 8px;
+	background: #F5F5F5;
+}
+.ui-sortable-helper td{
+	background: rgba(255, 255, 255, 0.5);
+}
+
+th{
+	padding-top: 13px;
+	text-align: left;
+	min-width: 100px;
+}
+
+.postbox table input[type="text"]{
+	width: 100%;
+	padding: 5px;
+}
+
+.icon-col{
+	width: 185px;
+}
+
+th.icon-col{
+	padding-left: 43px;
+	width: 142px;
+}
+
+.postbox table .icon-col input{
+	width: 148px;
+}
+
+.icon-preview{
+	background: rgba( 0, 0, 0, 0.05 );
+	width: 16px;
+	height: 16px;
+	padding: 5px;
+	margin-right: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	line-height: 0.75;
+	text-align: center;
+	float: left;
+	
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.icon-preview img{
+	max-width: 16px;
+	max-height: 16px;
+}
+
+.actions-col{
+	min-width: 0;
+	width: 45px;
+	padding-right: 15px;
+}
+
+.sh_sb-move{
+	margin-right: 5px;
+	cursor: move;
+}
+
+.sh_sb-move, .sh_sb-delete{
+	display: inline-block;
+	padding: 3px;
+}
+
+.sh_sb-delete{
+	opacity: 0.4;
+	-webkit-transition: opacity 200ms ease;
+	-moz-transition: opacity 200ms ease;
+	transition: opacity 200ms ease;
+}
+
+.sh_sb-delete:hover{
+	opacity: 1;
+}
+
+.postbox tfoot label{
+	display: inline;
+	font-size: 11px;
+}
+
+.postbox tfoot input[type="submit"]{
+	padding-left: 30px;
+	padding-right: 30px;
+	float: right;
+}
