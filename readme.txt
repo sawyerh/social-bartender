@@ -16,7 +16,7 @@ echo: (boolean) Toggles the display of the generated list of links or return the
 
 == Credits / Support ==
 
-The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs or have feature requests, please leave your feedback on the plugin's Github page.
+The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs or have feature requests, please leave your feedback on the plugin's GitHub page.
 
 == Changelog ==
 

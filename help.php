@@ -45,6 +45,6 @@ function sh_sb_help_page(){ ?>
 		
 		<h3><?php _e( 'Credits / Support', 'shaken' ); ?></h3>
 		
-		<p><?php _e( 'The Social Bartender plugin was created by', 'shaken' ); ?> <a href="http://shakenandstirredweb.com">Shaken and Stirred Web</a>. <?php _e( 'If you find any bugs or have feature requests, please leave your feedback on the plugin\'s <a href="https://github.com/sawyerh/social-bartender">Github page</a>.', 'shaken' ); ?></p>
+		<p><?php _e( 'The Social Bartender plugin was created by', 'shaken' ); ?> <a href="http://shakenandstirredweb.com">Shaken and Stirred Web</a>. <?php _e( 'If you find any bugs or have feature requests, please leave your feedback on the plugin\'s <a href="https://github.com/sawyerh/social-bartender">GitHub page</a>.', 'shaken' ); ?></p>
 		
 <?php } ?>
