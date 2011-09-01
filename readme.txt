@@ -1,3 +1,5 @@
+For more in-depth documentation, view the plugin's help page in WordPress after you activate it.
+
 == Including the list of links in your theme ==
 
 To include the list of links in your theme, you need to place the following PHP function in the location where you want the links to appear:
