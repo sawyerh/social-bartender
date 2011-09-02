@@ -1,6 +1,17 @@
 .wrap{
 	max-width: 940px;
 }
+
+#post-body{
+	padding: 24px 0 0;
+	border: 0 none;
+}
+
+.inner-sidebar{
+	display: block;
+	float: left;
+}
+
 .empty-message{
 	text-align: center;
 	padding: 80px 50px;
@@ -21,11 +32,8 @@
 
 .postbox p{
 	padding: 0 10px;
-}
-
-.postbox input[type="text"]{
-	width: 85%;
-	color: #444;
+	display: block;
+	overflow: hidden;
 }
 
 .postbox input[type="text"].error-field{
@@ -37,12 +45,22 @@
 	margin-bottom: 2px;
 }
 
-.required{
+.howto .required{
 	color: #bd0000;
+	float: none;
+	margin: 0;
+	display: inline;
 }
 
 #sh_sb_icon_new{
+	float: left;
 	width: 150px;
+	margin-left: 24px;
+}
+
+.upload-field a{
+	float: right;
+	margin-top: 4px;
 }
 
 .sh_sb-border-bottom, .postbox p.sh_sb-border-bottom, tbody td, th{

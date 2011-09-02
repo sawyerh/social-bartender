@@ -56,9 +56,6 @@ jQuery(document).ready(function($) {
 		
 	});
 	
-	// Fade messages
-	$('.fade').delay(2000).fadeOut();
-	
 	var formfield = null;
 	
 	$('#upload_image_button').click(function() { $('html').addClass('Image');

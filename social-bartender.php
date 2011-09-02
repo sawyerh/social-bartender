@@ -63,7 +63,7 @@ function sh_sb_image_admin_scripts() {
 
 //style actions with page detection
 function sh_sb_image_admin_styles() { 
-	wp_enqueue_style( 'sh-image-upload', SH_SB_DIR.'/css/styles.css', array( 'thickbox' ) );
+	wp_enqueue_style( 'sh-image-upload', SH_SB_DIR.'/css/styles.css', array( 'thickbox', 'nav-menu' ) );
 }
 
 /**
