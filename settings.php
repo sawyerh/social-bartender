@@ -210,8 +210,6 @@ function sh_sb_check_update(){
 
 	if( array_key_exists( 'sh_sb_update', $_POST ) ):
 		
-		//print_r($_POST);
-		
 		$items = '';
 		
 		$length = count( $_POST['sh_sb_title'] );

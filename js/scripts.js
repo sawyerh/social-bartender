@@ -14,6 +14,7 @@ jQuery(document).ready(function($) {
 		var icon = $('img', this).attr('src');
 		var field = $('input#sh_sb_icon_new');
 		
+		// Change the input value and animate a glow
 		field.attr('value', icon).toggleClass('blue-glow').delay(600).queue(function() {
 			$(this).toggleClass('blue-glow').dequeue();
 		});
