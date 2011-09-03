@@ -83,7 +83,7 @@ function sh_sb_settings_page(){
 								<?php echo sh_sb_get_icons( plugin_dir_path( __FILE__ ), SH_SB_DIR ); ?>
 							</div>
 							
-							<p><?php _e( "Select an icon above and it's URL will be automatically entered for you.", 'shaken' ); ?></p>
+							<p><?php _e( "Select an icon above and its URL will be automatically entered for you.", 'shaken' ); ?></p>
 							
 						</div><!-- #icon-tabs -->
 					</div><!-- #postbox -->
