@@ -23,10 +23,10 @@ function sh_sb_settings_page(){
 				<div id="side-sortables" class="meta-box-sortables">
 					
 					<div class="postbox">
-						<h3><?php _e( 'Create New Item', 'shaken' ); ?></h3>
+						<div class="handlediv" title="Click to toggle"><br></div>
+						<h3 class="hndle"><?php _e( 'Create New Item', 'shaken' ); ?></h3>
 						
 						<div class="inside customlinkdiv">
-							
 							<form action="" method="post" id="create-form">
 							
 								<p><label for="sh_sb_link" class="howto">
@@ -40,20 +40,54 @@ function sh_sb_settings_page(){
 								</label></p>
 								
 								<p class="sh_sb-border-bottom"><label for="sh_sb_icon_new" class="upload-field howto">
-									<span><?php _e( 'Image', 'shaken' ); ?></span>
+									<span><?php _e( 'Icon', 'shaken' ); ?></span>
 									<input type="text" value="" name="sh_sb_icon" id="sh_sb_icon_new" class="code" />
-								
+									
 									<a href="#" id="upload_image_button"><?php _e( 'Upload', 'shaken' ); ?></a>
+									
+									<span class="sh_sb-clearfix"></span>
 								</label></p>
 								
 								<p><input type="submit" name="sh_sb_new_item" id="sh_sb_new_item" value="<?php _e( 'Create Item', 'shaken' ); ?>" class="button-primary" /></p>
 																
 							</form>
-							
 						</div><!-- #inside -->
-						
 					</div><!-- #postbox -->
 					
+					
+					<div class="postbox">
+						
+						<div class="handlediv" title="Click to toggle"><br></div>
+						<h3 class="hndle"><?php _e( 'Icon Bucket', 'shaken' ); ?></h3>
+												
+						<div id="sh_sb-icon-tabs" class="inside posttypediv">
+							
+							<?php
+								$theme_icons = sh_sb_get_icons( get_theme_root().'/'.get_template().'/', get_template_directory_uri().'/' );
+							?>
+							
+							<ul class="add-menu-item-tabs">
+								<?php if( $theme_icons ){ ?>
+									<li><a href="#theme-icons" class="nav-tab-link">Theme Icons</a></li>
+								<?php } ?>
+								<li><a href="#default-icons" class="nav-tab-link">Default Icons</a></li>
+							</ul>
+							
+							<?php if( $theme_icons ){ ?>
+								<div id="theme-icons" class="tabs-panel">
+									<?php echo $theme_icons; ?>
+								</div>
+							<?php } ?>
+							
+							<div id="default-icons" class="tabs-panel">
+								<?php echo sh_sb_get_icons( plugin_dir_path( __FILE__ ), SH_SB_DIR ); ?>
+							</div>
+							
+							<p><?php _e( "Select an icon above and it's URL will be automatically entered for you.", 'shaken' ); ?></p>
+							
+						</div><!-- #icon-tabs -->
+					</div><!-- #postbox -->
+										
 				</div><!-- #side-sortables -->
 			</div><!-- #side-info-column -->
 			
@@ -219,5 +253,40 @@ function sh_sb_check_update(){
 		</div>
 		
 	<?php endif;
+	
+}
+
+// Find icon images
+// There is likely a better way to do this that I don't know of
+function sh_sb_get_icons($local, $url) {
+	
+	if( is_dir( $local.'images/sb-icons' )):
+	
+		$images = scandir( $local.'images/sb-icons' );
+		$output = '';
+		
+		if( $images !== false ):
+			
+			$output .= '<ul class="sh_sb-icons-list">';
+			
+			// Loop through and display each image
+			foreach( $images as $image ):
+				
+				// Strip out '.' and '..'
+				if ( $image != "." && $image != ".." ){
+					$output .= '<li class="icon-preview"><img src="'.$url.'images/sb-icons/'.$image.'" /></li>';
+				}
+			
+			endforeach;
+			
+			$output .= '</ul>';
+			
+		endif;
+		
+		return $output;
+
+	else:
+		return false;
+	endif;
 	
 }

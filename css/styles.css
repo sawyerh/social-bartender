@@ -30,10 +30,25 @@
 	padding: 0;
 }
 
+.postbox .posttypediv{
+	padding: 0 10px;
+}
+
 .postbox p{
 	padding: 0 10px;
 	display: block;
 	overflow: hidden;
+}
+
+.postbox p.sh_sb-border-bottom{
+	overflow: visible;
+}
+
+.howto .sh_sb-clearfix{
+	display: block;
+	clear: both;
+	float: none;
+	height: 1px;
 }
 
 .postbox input[type="text"].error-field{
@@ -55,7 +70,17 @@
 #sh_sb_icon_new{
 	float: left;
 	width: 150px;
-	margin-left: 24px;
+	margin-left: 35px;
+	
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.blue-glow{
+	-webkit-box-shadow: 0 0 15px rgba(0, 148, 242, 0.85);
+	-moz-box-shadow: 0 0 15px rgba(0, 148, 242, 0.85);
+	box-shadow: 0 0 15px rgba(0, 148, 242, 0.85);
 }
 
 .upload-field a{
@@ -64,9 +89,7 @@
 }
 
 .sh_sb-border-bottom, .postbox p.sh_sb-border-bottom, tbody td, th{
-	border-bottom-color: #DFDFDF;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
+	border-bottom: 1px solid #DFDFDF;
 	-webkit-box-shadow: 0 1px 0 #fff;
 	-moz-box-shadow: 0 1px 0 #fff;
 	box-shadow: 0 1px 0 #fff;
@@ -74,11 +97,23 @@
 	margin-bottom: 10px;
 }
 
+.ui-state-active{
+	background-color: white;
+	border-color: #DFDFDF;
+	border-style: solid solid none;
+	border-width: 1px 1px 0;
+}
+
+.posttypediv div.tabs-panel{
+	height: auto;
+}
+
 /* *******************************************
 				Listing Table
 ******************************************* */
 table{
 	max-width: 700px;
+	width: 100%;
 	position: relative;
 }
 
@@ -88,7 +123,6 @@ table.empty-table{
 
 td, th{
 	padding: 8px;
-	background: #F5F5F5;
 }
 .ui-sortable-helper td{
 	background: rgba(255, 255, 255, 0.5);
@@ -137,6 +171,22 @@ th.icon-col{
 .icon-preview img{
 	max-width: 16px;
 	max-height: 16px;
+}
+
+li.icon-preview{
+	margin: 3px 6px 3px 0;
+	cursor: pointer;
+}
+li.icon-preview:nth-child(7n){
+	margin-right: 0;
+}
+
+li.icon-preview:hover{
+	background: rgba( 0, 0, 0, 0.15 );
+}
+
+li.icon-preview:active{
+	background: rgba( 0, 0, 0, 0.25 );
 }
 
 .actions-col{

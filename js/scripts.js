@@ -5,6 +5,21 @@ jQuery(document).ready(function($) {
 		handle: 'a.sh_sb-move',
 	});
 	
+	// Tabs
+	$('#sh_sb-icon-tabs').tabs();
+	
+	// Icons
+	$('li.icon-preview').click(function(){
+		
+		var icon = $('img', this).attr('src');
+		var field = $('input#sh_sb_icon_new');
+		
+		field.attr('value', icon).toggleClass('blue-glow').delay(600).queue(function() {
+			$(this).toggleClass('blue-glow').dequeue();
+		});
+		
+	});
+		
 	$('a.sh_sb-delete').click(function(){
 		
 		if( confirm( 'Are you sure you want to remove this item?' ) ){

@@ -30,7 +30,7 @@ add_action('init',  'sh_sb_init');
 
 function sh_sb_init(){
 
-	load_plugin_textdomain( 'shaken', FALSE, SH_SB_DIR.'/languages' );
+	load_plugin_textdomain( 'shaken', FALSE, SH_SB_DIR.'languages' );
 	
 	if( current_user_can( 'manage_options' ) ){
 		// Display admin pages
@@ -42,7 +42,7 @@ function sh_sb_init(){
 function sh_sb_create_menu(){
 	
 	$settings = add_menu_page( 'Social Bartender Settings', 'Social Bartender', 'manage_options', 
-					__FILE__, 'sh_sb_settings_page', SH_SB_DIR.'/images/icon.png' );
+					__FILE__, 'sh_sb_settings_page', SH_SB_DIR.'images/icon.png' );
 	
 	add_submenu_page( __FILE__, 'Help', 'Help', 
 					  'manage_options', __FILE__.'_help', 'sh_sb_help_page' );
@@ -57,13 +57,13 @@ function sh_sb_create_menu(){
 
 //script actions with page detection 
 function sh_sb_image_admin_scripts() { 
-	wp_enqueue_script( 'sh-image-upload', SH_SB_DIR.'/js/scripts.js', 
-					   array( 'jquery','media-upload','thickbox', 'jquery-ui-sortable', 'jquery-ui-core' ) );
+	wp_enqueue_script( 'sh-image-upload', SH_SB_DIR.'js/scripts.js', 
+					   array( 'jquery', 'media-upload', 'thickbox', 'jquery-ui-core', 'jquery-ui-sortable', 'jquery-ui-tabs' ) );
 }
 
 //style actions with page detection
 function sh_sb_image_admin_styles() { 
-	wp_enqueue_style( 'sh-image-upload', SH_SB_DIR.'/css/styles.css', array( 'thickbox', 'nav-menu' ) );
+	wp_enqueue_style( 'sh-image-upload', SH_SB_DIR.'css/styles.css', array( 'thickbox', 'nav-menu' ) );
 }
 
 /**
