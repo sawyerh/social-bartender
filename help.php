@@ -40,7 +40,13 @@ function sh_sb_help_page(){ ?>
 &lt;a href="http://example.com" class="sh-sb-link"&gt;
 	&lt;img src="http://mysite.com/images/icon-2.png" alt="Link #2 Title" class="sh-sb-icon"&gt;
 &lt;/a&gt;</code></pre>
-
+		
+		<hr />
+		
+		<h3><?php _e( 'Theme Developers', 'shaken' ); ?></h3>
+		
+		<p><?php _e( 'If you would like to make your own icon set available to users in the Icon Box, just place the images inside of an "images/sb-icons" folder of your theme.', 'shaken' ); ?></p>
+		
 		<hr />
 		
 		<h3><?php _e( 'Credits / Support', 'shaken' ); ?></h3>

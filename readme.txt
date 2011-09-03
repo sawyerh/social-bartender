@@ -14,6 +14,10 @@ link_after: (string) Sets the text or html that follows the <a> tag. Default = '
 
 echo: (boolean) Toggles the display of the generated list of links or return the list as an HTML text string to be used in PHP. Default = 1
 
+== Theme Developers ==
+
+If you would like to make your own icon set available to users in the Icon Box, just place the images inside of an "images/sb-icons" folder of your theme.
+
 == Credits / Support ==
 
 The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs or have feature requests, please leave your feedback on the plugin's GitHub page.
