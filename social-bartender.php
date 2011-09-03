@@ -41,11 +41,9 @@ function sh_sb_init(){
 
 function sh_sb_create_menu(){
 	
-	$settings = add_menu_page( 'Social Bartender Settings', 'Social Bartender', 'manage_options', 
-					__FILE__, 'sh_sb_settings_page', SH_SB_DIR.'images/icon.png' );
+	$settings = add_options_page( 'Social Bartender', 'Social Bartender', 'manage_options', __FILE__, 'sh_sb_settings_page');
 	
-	add_submenu_page( __FILE__, 'Help', 'Help', 
-					  'manage_options', __FILE__.'_help', 'sh_sb_help_page' );
+	add_options_page( 'Help', 'Help', 'manage_options', 'social-bartender/help.php', 'sh_sb_help_page' );
 					  
 	//script actions with page detection 
 	add_action( 'admin_print_scripts-'.$settings, 'sh_sb_image_admin_scripts' ); 
@@ -53,6 +51,10 @@ function sh_sb_create_menu(){
 	//style actions with page detection
 	add_action( 'admin_print_styles-'.$settings, 'sh_sb_image_admin_styles' );
 	
+	//add contextual help
+	$helplink = admin_url( 'options-general.php?page=social-bartender/help.php' );
+	$text = __('<p>View instructions for <a href="' . $helplink .'">Social Bartender</a>.</p>', 'shaken');
+	add_contextual_help( $settings, $text ); 
 }
 
 //script actions with page detection 
