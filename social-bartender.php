@@ -43,7 +43,7 @@ function sh_sb_create_menu(){
 	
 	$settings = add_options_page( 'Social Bartender', 'Social Bartender', 'manage_options', __FILE__, 'sh_sb_settings_page');
 	
-	add_options_page( 'Help', 'Help', 'manage_options', 'social-bartender/help.php', 'sh_sb_help_page' );
+	$helplink = add_options_page( 'Social Bartender Help', '', 'manage_options', 'social-bartender/help.php', 'sh_sb_help_page' );
 					  
 	//script actions with page detection 
 	add_action( 'admin_print_scripts-'.$settings, 'sh_sb_image_admin_scripts' ); 
