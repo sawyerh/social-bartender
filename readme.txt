@@ -1,6 +1,6 @@
 === Social Bartender ===
 Contributors: shakenstirred
-Tags: social networks, theme option, twitter, facebook 
+Tags: social networks, theme option, twitter, facebook, social links, icons, bar
 Requires at least: 3.1
 Tested up to: 3.2.1
 Stable tag: 1.0
@@ -35,10 +35,10 @@ echo: (boolean) Toggles the display of the generated list of links or return the
 
 The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs, have feature requests, or would like to contribute, please leave your feedback on the plugin's GitHub page.
 
-Contributors: @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
+Contributors on Twitter: @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
 
 == Changelog ==
 
-== 1.0 ==
+= 1.0 =
 
 * Initial release
