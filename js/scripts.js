@@ -2,7 +2,7 @@ jQuery(document).ready(function($) {
 	
 	// Items list actions
 	$( ".sortable" ).sortable({
-		handle: 'a.sh_sb-move',
+		handle: 'a.sh_sb-move'
 	});
 	
 	// Tabs
