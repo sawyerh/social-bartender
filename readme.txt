@@ -20,7 +20,9 @@ If you would like to make your own icon set available to users in the Icon Box, 
 
 == Credits / Support ==
 
-The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs or have feature requests, please leave your feedback on the plugin's GitHub page.
+The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs, have feature requests, or would like to contribute, please leave your feedback on the plugin's GitHub page.
+
+Contributors: @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
 
 == Changelog ==
 
