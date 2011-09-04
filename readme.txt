@@ -21,9 +21,9 @@ If you would like to make your own icon set available to users in the Icon Box, 
 
 = Parameters =
 
-link_before: (string) Sets the text or html that precedes the <a> tag. Default = ''
+link_before: (string) Sets the text or html that precedes the `<a>` tag. Default = ''
 
-link_after: (string) Sets the text or html that follows the <a> tag. Default = ''
+link_after: (string) Sets the text or html that follows the `<a>` tag. Default = ''
 
 echo: (boolean) Toggles the display of the generated list of links or return the list as an HTML text string to be used in PHP. Default = 1
 
