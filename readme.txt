@@ -1,12 +1,25 @@
-For more in-depth documentation, view the plugin's help page in WordPress after you activate it.
+=== Social Bartender ===
+Contributors: shakenstirred
+Tags: social networks, theme option, twitter, facebook 
+Requires at least: 3.1
+Tested up to: 3.2.1
+Stable tag: 1.0
 
-== Including the list of links in your theme ==
+A simple solution for adding a list of social network links (images or text) anywhere you want, with one little function.
+
+== Description ==
+
+Social Bartender adds a new settings page where you can create a list of social network links and place them anywhere you want with one little function. Users can select from the collection of social network icons that come with the plugin, select from a collection of icons provided with the theme (if support is built-in), or upload their own icons. 
+
+== Installation ==
 
 To include the list of links in your theme, you need to place the following PHP function in the location where you want the links to appear:
 
-<?php social_bartender(); ?>
+`<?php social_bartender(); ?>`
 
-== Parameters ==
+If you would like to make your own icon set available to users in the Icon Box, just place the images inside of an "images/sb-icons" folder of your theme.
+
+= Parameters =
 
 link_before: (string) Sets the text or html that precedes the <a> tag. Default = ''
 
@@ -14,11 +27,11 @@ link_after: (string) Sets the text or html that follows the <a> tag. Default = '
 
 echo: (boolean) Toggles the display of the generated list of links or return the list as an HTML text string to be used in PHP. Default = 1
 
-== Theme Developers ==
+== Screenshots ==
 
-If you would like to make your own icon set available to users in the Icon Box, just place the images inside of an "images/sb-icons" folder of your theme.
+1. The admin screen where links are created.
 
-== Credits / Support ==
+== Other Notes ==
 
 The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs, have feature requests, or would like to contribute, please leave your feedback on the plugin's GitHub page.
 
