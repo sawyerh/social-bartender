@@ -1,6 +1,6 @@
 === Social Bartender ===
 Contributors: shakenstirred
-Tags: social networks, theme option, twitter, facebook, social links, icons, bar
+Tags: social, social networks, social links, social icons, theme option
 Requires at least: 3.1
 Tested up to: 3.2.1
 Stable tag: 1.0
