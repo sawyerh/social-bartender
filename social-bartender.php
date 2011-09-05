@@ -116,5 +116,6 @@ function social_bartender( $link_before = '', $link_after = '', $echo = 1 ){
 
 require_once(WP_PLUGIN_DIR . "/" . basename(dirname(__FILE__)) . "/settings.php");
 require_once(WP_PLUGIN_DIR . "/" . basename(dirname(__FILE__)) . "/help.php");
+require_once(WP_PLUGIN_DIR . "/" . basename(dirname(__FILE__)) . "/widget.php");
 
 ?>
