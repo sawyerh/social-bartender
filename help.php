@@ -54,4 +54,6 @@
 		return $contextual_help;
 	}
 		
-add_filter('contextual_help', 'sh_sb_help_page', 10, 3); ?>	
+add_filter('contextual_help', 'sh_sb_help_page', 10, 3); 
+
+?>
