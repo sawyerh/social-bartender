@@ -13,7 +13,9 @@ Social Bartender adds a new settings page where you can create a list of social 
 
 == Installation ==
 
-To include the list of links in your theme, you need to place the following PHP function in the location where you want the links to appear:
+Option 1) Use the sidebar widget
+
+Option 2) Place the following PHP function in the location where you want the links to appear:
 
 `<?php social_bartender(); ?>`
 
