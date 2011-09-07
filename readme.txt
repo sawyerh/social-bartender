@@ -3,7 +3,7 @@ Contributors: shakenstirred
 Tags: social, social networks, social links, social icons, theme option
 Requires at least: 3.1
 Tested up to: 3.2.1
-Stable tag: 1.0
+Stable tag: 1.0.1
 
 A simple solution for adding a list of social network links (images or text) anywhere you want, with one little function.
 
@@ -44,3 +44,7 @@ Contributors on Twitter: @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
 = 1.0 =
 
 * Initial release
+
+= 1.0.1 =
+
+* Widget added
