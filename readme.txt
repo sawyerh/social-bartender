@@ -5,11 +5,11 @@ Requires at least: 3.1
 Tested up to: 3.2.1
 Stable tag: 1.0.1
 
-A simple solution for adding a list of social network links (images or text) anywhere you want, with one little function.
+A simple solution for adding a list of social network links (images or text) anywhere you want.
 
 == Description ==
 
-Social Bartender adds a new settings page where you can create a list of social network links and place them anywhere you want with one little function. Users can select from the collection of social network icons that come with the plugin, select from a collection of icons provided with the theme (if support is built-in), or upload their own icons. 
+Social Bartender adds a new settings page where you can create a list of social network links and place them anywhere you want with one little function or widget. Users can select from the collection of social network icons that come with the plugin, select from a collection of icons provided with the theme (if support is built-in), or upload their own icons. 
 
 == Installation ==
 
