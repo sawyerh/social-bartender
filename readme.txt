@@ -1,6 +1,7 @@
 === Social Bartender ===
-Contributors: shakenstirred
+Contributors: Sawyer Hollenshead
 Tags: social, social networks, social links, social icons, theme option
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TAPWP9QGK6NDG
 Requires at least: 3.1
 Tested up to: 3.2.1
 Stable tag: 1.0.1
