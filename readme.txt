@@ -18,7 +18,7 @@ Option 1) Use the sidebar widget
 
 Option 2) Place the following PHP function in the location where you want the links to appear:
 
-`<?php social_bartender(); ?>`
+`<?php if( function_exists( 'social_bartender' ) ){ social_bartender(); } ?>`
 
 If you would like to make your own icon set available to users in the Icon Box, just place the images inside of an "images/sb-icons" folder of your theme.
 
