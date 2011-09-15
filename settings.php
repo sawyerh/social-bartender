@@ -212,7 +212,7 @@ function sh_sb_check_update(){
 		
 		$items = '';
 		
-		$length = count( $_POST['sh_sb_title'] );
+		$length = ( isset( $_POST['sh_sb_title'] ) && $_POST['sh_sb_title'] != 0 ) ? count( $_POST['sh_sb_title'] ) : 0;
 		
 		for( $i = 0; $i < $length; $i++ ):
 			
