@@ -72,10 +72,16 @@ jQuery(document).ready(function($) {
 		
 	});
 	
+	// Media Uploader
 	var formfield = null;
 	
-	$('#upload_image_button').click(function() { $('html').addClass('Image');
+	$('#upload_image_button').click(function() { 
+		$('html').addClass('Image');
 		formfield = $('#sh_sb_icon_new').attr('name');
+		
+		//Change "insert into post" to "Use this Button"
+		tbframe_interval = setInterval(function() {jQuery('#TB_iframeContent').contents().find('.savesend .button').val('Use This Image');}, 2000);
+		
 		tb_show('', 'media-upload.php?type=image&TB_iframe=true'); return false;
 	});
 	
@@ -95,4 +101,5 @@ jQuery(document).ready(function($) {
 			window.original_send_to_editor(html); 
 		}
 	};
+
 });
