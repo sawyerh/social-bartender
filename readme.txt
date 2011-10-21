@@ -44,10 +44,14 @@ Contributors on Twitter: @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
 
 == Changelog ==
 
-= 1.0 =
+= 1.1.0 =
 
-* Initial release
+* Fix compatibility issues with WordPress 3.3
 
 = 1.0.1 =
 
 * Widget added
+
+= 1.0 =
+
+* Initial release
