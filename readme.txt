@@ -40,7 +40,7 @@ echo: (boolean) Toggles the display of the generated list of links or return the
 
 The Social Bartender plugin was created by Shaken and Stirred Web. If you find any bugs, have feature requests, or would like to contribute, please leave your feedback on the plugin's [GitHub page](https://github.com/sawyerh/social-bartender).
 
-Contributors on Twitter: @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
+Contributors (on Twitter): @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
 
 == Changelog ==
 
