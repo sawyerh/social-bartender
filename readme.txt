@@ -44,14 +44,14 @@ Contributors (on Twitter): @sawyerh, @devinsays, @NickHamze, and @thelukemcdonal
 
 == Changelog ==
 
-= 1.1.0 =
+= 1.1.0 (Oct. 21, 2011) =
 
 * Fix compatibility issues with WordPress 3.3
 
-= 1.0.1 =
+= 1.0.1 (Sept. 9, 2011) =
 
 * Widget added
 
-= 1.0 =
+= 1.0 (Sept. 4, 2011) =
 
 * Initial release
