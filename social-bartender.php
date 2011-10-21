@@ -61,7 +61,13 @@ function sh_sb_image_admin_scripts() {
 
 //style actions with page detection
 function sh_sb_image_admin_styles() { 
-	wp_enqueue_style( 'sh-image-upload', SH_SB_DIR.'css/styles.css', array( 'thickbox', 'nav-menu' ) );
+	if( version_compare( '3.3', get_bloginfo( 'version' ), '>' ) ):
+		wp_register_style( 'social-bartender-css', SH_SB_DIR.'css/styles.css', array( 'thickbox', 'nav-menu' ) );
+	else:
+		wp_register_style( 'social-bartender-css', SH_SB_DIR.'css/styles.css', array( 'wp-admin' ) );
+	endif;
+	
+	wp_enqueue_style( 'social-bartender-css' );
 }
 
 /**

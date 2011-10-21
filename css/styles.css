@@ -67,6 +67,12 @@
 	display: inline;
 }
 
+.howto span{
+	margin-top: 4px;
+	display: block;
+	float: left;
+}
+
 #sh_sb_icon_new{
 	float: left;
 	width: 150px;
