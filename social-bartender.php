@@ -87,6 +87,8 @@ function social_bartender( $link_before = '', $link_after = '', $echo = 1 ){
 	$items = get_option( 'sh_sb_items' );
 	$output = '';
 	
+	if( !$items ) return '';
+	
 	foreach( $items as $item ):
 		
 		$link = $item['link'];
