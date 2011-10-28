@@ -44,6 +44,10 @@ Contributors (on Twitter): @sawyerh, @devinsays, @NickHamze, and @thelukemcdonal
 
 == Changelog ==
 
+= 1.2.0 (pending) =
+
+* Update contextual help to work w/ WP 3.3
+
 = 1.1.0 (Oct. 21, 2011) =
 
 * Fix compatibility issues with WordPress 3.3
