@@ -51,6 +51,11 @@ function sh_sb_create_menu(){
 	//style actions with page detection
 	add_action( 'admin_print_styles-'.$sh_sb_settings, 'sh_sb_image_admin_styles' );
 	
+	// WP 3.3 Help section
+	if( version_compare( '3.3', get_bloginfo( 'version' ), '<=' ) ):
+		add_action("load-$sh_sb_settings", 'sh_sb_help_page');
+	endif;
+	
 }
 
 //script actions with page detection 
