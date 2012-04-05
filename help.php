@@ -69,18 +69,21 @@ function sh_sb_help_page() {
 	$current_screen->add_help_tab( array(
 	    'id'      => 'output',
 		'title'   => __('Example Output'),
-		'content' => $sb_output,
+		'content' => $sb_output
 	) );
 	
-	// Sidebar
 	
-	$current_screen->add_help_sidebar(
-		'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
+	$sb_info = '<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
 		'<p>' . __( '<a href="https://github.com/sawyerh/social-bartender" target="_blank">Contribute on Github</a>' ) . '</p>' .
 		'<p>' . __( '<a href="http://shakenandstirredweb.com">Shaken and Stirred Web</a>' ) . '</p>' .
-		'<p>' . __( '<a href="http://onlythefunctions.com" target="_blank">Only the Functions</a>' ) . '</p>'
+		'<p>' . __( '<a href="http://onlythefunctions.com" target="_blank">Only the Functions</a>' ) . '</p>';
+		
+	$current_screen->add_help_tab( array(
+	    'id'      => 'more_info',
+		'title'   => __('Plugin Info'),
+		'content' => $sb_info
+	) ); 
 	
-	); 
 }
 
 else:
