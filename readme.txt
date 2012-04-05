@@ -44,7 +44,7 @@ Contributors (on Twitter): @sawyerh, @devinsays, @NickHamze, and @thelukemcdonal
 
 == Changelog ==
 
-= 1.2.0 =
+= 1.2.0 (April 4, 2012) =
 
 * Update contextual help to work w/ WP 3.3
 
