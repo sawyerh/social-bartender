@@ -132,4 +132,6 @@ require_once(WP_PLUGIN_DIR . "/" . basename(dirname(__FILE__)) . "/settings.php"
 require_once(WP_PLUGIN_DIR . "/" . basename(dirname(__FILE__)) . "/help.php");
 require_once(WP_PLUGIN_DIR . "/" . basename(dirname(__FILE__)) . "/widget.php");
 
+add_shortcode('social_bartender', 'social_bartender');
+
 ?>
