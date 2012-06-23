@@ -24,6 +24,10 @@ Option 2) Place the following PHP function in the location where you want the li
 
 `<?php if( function_exists( 'social_bartender' ) ){ social_bartender(); } ?>`
 
+Option 3) Use the shortcode:
+
+`[social_bartender]`
+
 **If you would like to make your own icon set available to users in the Icon Box**, just place the images inside of an "images/sb-icons" folder of your theme.
 
 = Parameters =
@@ -45,6 +49,10 @@ The Social Bartender plugin was created by Shaken and Stirred Web. If you find a
 Contributors (on Twitter): @sawyerh, @devinsays, @NickHamze, and @thelukemcdonald
 
 == Changelog ==
+
+= 1.2.1 Pending =
+
+* Add shortcode
 
 = 1.2.0 (April 4, 2012) =
 
