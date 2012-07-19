@@ -104,7 +104,7 @@ function social_bartender( $link_before = '', $link_after = '', $echo = 1 ){
 			
 			$output .= $link_before;
 			
-			$output .= '<a href="'.$link.'" class="sh-sb-link">';
+			$output .= '<a target="_blank" title="'.$title.'" href="'.$link.'" class="sh-sb-link">';
 				
 			if( $icon && get_option( 'sh_sb_title_only' ) != 'yes' ){
 				$output .= '<img src="'.$icon.'" alt="'.$title.'" class="sh-sb-icon" />';
