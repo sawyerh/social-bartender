@@ -182,7 +182,7 @@ function sh_sb_check_new(){
 		$entry = array(
 			'title' => esc_html( $title ),
 			'link' => esc_url_raw( $link ),
-			'icon' => esc_url_raw( $icon )
+			'icon' => esc_html( $icon )
 		);
 		
 		// Check if this option already exists
@@ -226,7 +226,7 @@ function sh_sb_check_update(){
 			$entry = array(
 				'title' => esc_html( $title ),
 				'link' => esc_url_raw( $link ),
-				'icon' => esc_url_raw( $icon )
+				'icon' => esc_html( $icon )
 			);
 			
 			$items[] = $entry;
