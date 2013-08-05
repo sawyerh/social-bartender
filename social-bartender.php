@@ -107,7 +107,8 @@ function social_bartender( $link_before = '', $link_after = '', $echo = 1 ){
 			$output .= '<a href="'.$link.'" class="sh-sb-link">';
 				
 			if( $icon && get_option( 'sh_sb_title_only' ) != 'yes' ){
-				$output .= '<img src="'.$icon.'" alt="'.$title.'" class="sh-sb-icon" />';
+				$icon_image = '<img src="'.$icon.'" alt="'.$title.'" class="sh-sb-icon" />';
+				$output .= apply_filters( 'sh_sb_icon_image' , $icon_image, $icon ); // Icon image hook
 			}
 			
 			if( $title && get_option( 'sh_sb_title_only' ) == 'yes' ){
@@ -123,9 +124,9 @@ function social_bartender( $link_before = '', $link_after = '', $echo = 1 ){
 	endforeach;
 	
 	if( $echo == 1 )
-		echo $output;
+		echo apply_filters( 'sh_sb_links' , $output ); // Icon link hook
 	else
-		return $output;
+		return apply_filters( 'sh_sb_links' , $output ); // Icon link hook
 }
 
 require_once(WP_PLUGIN_DIR . "/" . basename(dirname(__FILE__)) . "/settings.php");

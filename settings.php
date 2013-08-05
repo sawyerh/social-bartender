@@ -71,6 +71,7 @@ function sh_sb_settings_page(){
 									<li><a href="#theme-icons" class="nav-tab-link">Theme Icons</a></li>
 								<?php } ?>
 								<li><a href="#default-icons" class="nav-tab-link">Default Icons</a></li>
+								<?php do_action('sh_sb_menu_item_tabs'); // Icons tab hook ?>
 							</ul>
 							
 							<?php if( $theme_icons ){ ?>
@@ -82,6 +83,7 @@ function sh_sb_settings_page(){
 							<div id="default-icons" class="tabs-panel">
 								<?php echo sh_sb_get_icons( plugin_dir_path( __FILE__ ), SH_SB_DIR ); ?>
 							</div>
+							<?php do_action('sh_sb_tabs_panel'); // Icons panel hook ?>
 							
 							<p><?php _e( "Select an icon above and its URL will be automatically entered for you.", 'shaken' ); ?></p>
 							
@@ -121,9 +123,10 @@ function sh_sb_settings_page(){
 									<tr>
 										<td class="icon-col">
 											<div class="icon-preview">
-											<?php if( $icon && $icon != '' ){ ?>
-												<img src="<?php echo $icon; ?>" alt="<?php echo $icon; ?>" />
-											<?php } ?>
+											<?php if( $icon && $icon != '' ){
+												$icon_image = '<img src="' . $icon . '" alt="' . $icon . '" />';
+												echo apply_filters( 'sh_sb_icon_preview' , $icon_image, $icon ); // Icon preview hook
+											} ?>
 											</div>
 											<input type="text" value="<?php echo $icon; ?>" name="sh_sb_icon[]" class="code" />
 										</td>
